@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: black;
+  --instrument-family:"Instrument Serif", serif;
+  --roboto-family:"Roboto Slab", serif;
+  --inter-family:"Inter", sans-serif;
+
+
+}
+body {
+  font-family: var(--inter-family);
+  
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  /* align-items: center; */
+  color: inherit;
+}
+button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1164px;
+  
+}
+/* header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+} */
+
+.nav-link{
+  font-size: 12px;
+  gap: 107px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.primary-btn{
+  font-size: 12px;
+}
+
+.primary-btn span{
+  margin-right: 16px;
+}
+
+.primary-btn a { 
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.primary-btn a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

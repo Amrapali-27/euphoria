@@ -1,0 +1,341 @@
+/* Remove navbar toggler border & focus styles */
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Custom hamburger icon */
+.toggler-icon {
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary-color);
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggler-icon::before,
+.toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.toggler-icon::before {
+  top: -7px;
+}
+
+.toggler-icon::after {
+  top: 7px;
+}
+
+/* When menu is open */
+.navbar-toggler[aria-expanded="true"] .toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* =========================
+   Hero Banner Section
+========================= */
+
+.hero-section {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+/* Background image */
+.hero-bg {
+  position: relative; 
+  min-height: 100vh;
+  background-image: url("../assets/images/banner-img.png");
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  background-position: center 55%;
+}
+
+/* Title */
+.hero-title {
+  font-size: 150px;
+  font-weight: 800;
+  font-family: var(--roboto-family);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image:
+    linear-gradient(90deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.1) 44%, #000 78%),
+    url("../assets/images/banner-img.png");
+
+  background-repeat: no-repeat;
+
+  background-size: 1200px auto;
+  background-position: center 54%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-text {
+  position: absolute;
+  max-width: 280px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.hero-text h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero-left {
+  top: 59%;
+  left: 65px;
+}
+
+.hero-right {
+  top: 59%;
+  right: 65px;
+}
+
+/* INITIATIVE SECTION */
+
+.initiative-left h2,
+.initiative-right h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.initiative-left p,
+.initiative-right p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.initiative-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.initiative-circle {
+  display: flex;
+  align-items: flex-end;
+}
+
+.initiative-right {
+  padding-top: 8px;
+}
+
+.section-heading{
+  font-size: 36px;
+  font-weight: 800;
+  
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180%;
+  text-align: center;
+
+  background-image:
+    linear-gradient(90deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.1) 44%, #000 78%),
+    url("../assets/images/banner-img.png");
+
+  background-repeat: no-repeat;
+
+  background-size: 1200px auto;
+  background-position: center 54%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  z-index: 3;
+}
+
+
+
+
+
+
+.discover-section {
+  background: #fff;
+}
+
+/* MAIN MODEL */
+.discover-model {
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+.discover-layout {
+  max-width: 720px;          /* replaces col-lg-8 */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.discover-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* HEADING */
+.discover-heading {
+  position: absolute;
+  top: 80px;                 /* adjust to match Figma */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  font-size: 64px;
+  font-weight: 800;
+  /* letter-spacing: 3px; */
+  line-height: 1.8;
+
+  z-index: 3;
+  pointer-events: none;
+}
+/* PARAGRAPH */
+.discover-text {
+   position: absolute;
+  right: 0;
+  bottom: 80px;        /* adjust to match Figma */
+  max-width: 234px;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* FLOATING IMAGES */
+.floating-images {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  max-width: 60px;
+}
+
+.float-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+/* INDIVIDUAL POSITIONS (adjust to match Figma) */
+.floating-images .img-1 { top: 10%; left: 5%; }
+.img-2 { top: 40%;
+    right: 73%;}
+.img-3 { bottom: 58%;
+    left: 138%; }
+.img-4 {bottom: 85%;
+    right: -676%; }
+.img-5 { bottom: 85%;
+    right: -545%; }
+.img-6 { top: 35%;
+    right: -394%;}
+.img-7 {top: 145.18px;
+    left: 1078.35px; }
+.img-8 {top: -51.85px;
+    left: 1065.6px; }
+.img-9 {top: -10.73px;
+    left: 720px; }
+.img-10 {top: -10.73px;
+    left: 799.2px;}
+.img-11 { top: 83px;
+    left: 864px; }
+.img-12 { top: -30px;
+    right: -180px; }
+.img-13 { top: 78px;
+    left: 1195px; }
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+   /* BANNER SECTION */
+  .hero-bg {
+    /* min-height: 60vh; */
+    background-size: contain;
+    background-position: center top;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 80px 0 40px;
+  }
+
+  .hero-title {
+    font-size: 100px;
+  }
+
+  /* INITIATIVE SECTION */
+  .section-heading {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .initiative-left,
+  .initiative-right {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .initiative-circle {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .discover-text {
+    position: static;
+    
+    max-width: 234px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+}
