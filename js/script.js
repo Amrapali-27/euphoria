@@ -28,3 +28,27 @@ AOS.init({
   window.addEventListener('load', () => {
     AOS.refresh();
   });
+
+
+  // LOOKS SECTION SWIPER
+
+  new Swiper('.looks-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 900,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    }
+  });
+
+  new Swiper(".standouts-swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 60,
+    loop: true,
+    speed: 700,
+    grabCursor: true,
+  });
+
+  
