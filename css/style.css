@@ -630,19 +630,33 @@ footer {
   border-radius: 20px;
   padding: 4px;
   backdrop-filter: blur(12px);
+
   background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(255, 255, 255, 0.25) 30%,
-    rgba(255, 255, 255, 0.08) 70%,
-    rgba(255, 255, 255, 0.02) 100%
+    120deg,
+    rgba(255,255,255,0.05) 20%,
+    rgba(255,255,255,0.6) 35%,
+    rgba(255,255,255,0.05) 50%
   );
+  background-size: 300% 300%;
+  animation: borderGlowMove 6s linear infinite;
+
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+
   pointer-events: none;
+  animation: borderGlowMove 8s linear infinite;
+}
+
+@keyframes borderGlowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
 
 .footer-form input,
@@ -707,6 +721,71 @@ footer {
   font-weight: 500;
   color: #fffafa;
 }
+
+.footer-form {
+  animation: footerFadeUp 0.9s ease-out both;
+}
+
+@keyframes footerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.footer-form .secondary-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-form .secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.footer-values a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-values a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.footer-values a:hover::after {
+  width: 100%;
+}
+
+.footer-models img {
+  animation: floatModel 6s ease-in-out infinite;
+}
+
+@keyframes floatModel {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
 
 /* Responsive */
 @media (max-width: 1400px) {
