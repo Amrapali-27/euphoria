@@ -85,7 +85,7 @@
       </nav>
     </header>
 
-    <!-- BANNER SECTION -->
+    <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="hero-bg">
         <h1 class="hero-title">EUPHORIA</h1>
@@ -170,11 +170,10 @@
       </div>
     </section>
 
-
-      <!-- DISCOVER SECTION -->
+    <!-- DISCOVER SECTION -->
     <section class="discover-section">
       <div class="container position-relative">
-        <!-- FLOATING DECORATIVE IMAGES (DESKTOP ONLY) -->
+        <!-- Floating images (DESKTOP ONLY) -->
         <div class="floating-images d-none d-lg-block" aria-hidden="true">
           <img
             src="./Assets/Images/f1.png"
@@ -294,7 +293,7 @@
           />
         </div>
 
-        <!-- MAIN CONTENT -->
+        <!-- Main Content -->
         <div class="discover-layout">
           <div class="discover-visual">
             <h2 class="discover-heading">
@@ -325,7 +324,7 @@
       <div class="container">
         <div class="swiper looks-swiper">
           <div class="swiper-wrapper">
-            <!-- SLIDE 1 -->
+            <!-- Slide 1 -->
             <div class="swiper-slide">
               <article class="look-slide">
                 <!-- LEFT -->
@@ -380,7 +379,7 @@
               </article>
             </div>
 
-            <!-- SLIDE 2 -->
+            <!-- Slide 2 -->
             <div class="swiper-slide">
               <article class="look-slide">
                 <!-- LEFT -->
@@ -435,7 +434,7 @@
               </article>
             </div>
 
-            <!-- SLIDE 3 -->
+            <!-- Slide 3 -->
             <div class="swiper-slide">
               <article class="look-slide">
                 <!-- LEFT -->
@@ -490,7 +489,7 @@
               </article>
             </div>
 
-            <!-- SLIDE 4 -->
+            <!-- Slide 4 -->
             <div class="swiper-slide">
               <article class="look-slide">
                 <!-- LEFT -->
@@ -549,11 +548,217 @@
       </div>
     </section>
 
-
-
-
     <!-- STANDOUT SECTION -->
-     
+    <section class="prev-standouts">
+      <div class="container-xl">
+        <h2 class="standouts-title text-center">PREVIOUS STANDOUTS</h2>
+
+        <div class="standouts-carousel">
+          <div class="standouts-track" id="standoutsTrack">
+            <!-- Slide1 -->
+            <div
+              class="standout-slide"
+              data-title="MODULE"
+              data-season="Spring/Summer 2023"
+            >
+              <img src="./Assets/Images/standout1.png" alt="Module" />
+              <div class="standout-caption">
+                <h4>MODULE</h4>
+                <p>Spring/Summer 2023</p>
+              </div>
+            </div>
+
+            <!-- Slide2 -->
+            <div
+              class="standout-slide"
+              data-title="FESTIVE"
+              data-season="Spring/Summer 2021"
+            >
+              <img src="./Assets/Images/standout2.png" alt="Festive" />
+              <div class="standout-caption">
+                <h4>FESTIVE</h4>
+                <p>Spring/Summer 2021</p>
+              </div>
+            </div>
+
+            <!-- Slide3 (CENTER/ACTIVE) -->
+            <div
+              class="standout-slide active"
+              data-title="SKIN"
+              data-season="Spring/Summer 2024"
+            >
+              <img src="./Assets/Images/standoutcenter.png" alt="Skin" />
+              <div class="standout-caption">
+                <h4>SKIN</h4>
+                <p>Spring/Summer 2024</p>
+              </div>
+            </div>
+
+            <!-- Slide4 -->
+            <div
+              class="standout-slide"
+              data-title="MAIDEN"
+              data-season="Spring/Summer 2023"
+            >
+              <img src="./Assets/Images/standout3.png" alt="Maiden" />
+              <div class="standout-caption">
+                <h4>MAIDEN</h4>
+                <p>Spring/Summer 2023</p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div
+              class="standout-slide"
+              data-title="CLASSIC"
+              data-season="Fall/Winter 2024"
+            >
+              <img src="./Assets/Images/standout4.png" alt="Classic" />
+              <div class="standout-caption">
+                <h4>CLASSIC</h4>
+                <p>Fall/Winter 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button
+            class="standout-arrow prev-arrow"
+            id="prevStandout"
+            aria-label="Previous"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="standout-arrow next-arrow"
+            id="nextStandout"
+            aria-label="Next"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Active Slide Info -->
+        <div class="standout-meta text-center">
+          <h4 id="standoutTitle">SKIN</h4>
+          <p id="standoutSeason">Spring/Summer 2024</p>
+        </div>
+
+        <div class="d-flex primary-btn">
+          <a href="" class="mx-auto"
+            ><span>CLAIM YOUR STYLE</span>
+            <svg
+              width="25"
+              height="8"
+              viewBox="0 0 25 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.3536 4.03553C24.5488 3.84027 24.5488 3.52369 24.3536 3.32843L21.1716 0.146446C20.9763 -0.048816 20.6597 -0.048816 20.4645 0.146446C20.2692 0.341708 20.2692 0.658291 20.4645 0.853553L23.2929 3.68198L20.4645 6.51041C20.2692 6.70567 20.2692 7.02225 20.4645 7.21751C20.6597 7.41278 20.9763 7.41278 21.1716 7.21751L24.3536 4.03553ZM0 4.18198L24 4.18198V3.18198L0 3.18198L0 4.18198Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <div class="site-footer">
+        <div class="container">
+          <div
+            class="footer-inner d-flex flex-column flex-lg-row justify-content-between align-items-center"
+          >
+            <!-- Contact Form -->
+            <h3 class="footer-title">SHARE YOUR STYLE STORY</h3>
+
+            <div class="footer-form">
+              <form class="d-flex flex-column mb-4">
+                <input type="text" class="mb-4" placeholder="NAME" />
+                <input type="email" class="mb-4" placeholder="EMAIL" />
+                <textarea class="mb-4" placeholder="MESSAGE"></textarea>
+                <button class="secondary-btn align-self-start">SEND US</button>
+              </form>
+            </div>
+
+            <!-- Right: Models Image -->
+            <div class="footer-models">
+              <img
+                src="./Assets/Images/footer-models.png"
+                alt="Fashion Models"
+              />
+            </div>
+          </div>
+
+          <div class="footer-bottom row mt-4">
+            <!-- Left columns -->
+            <div class="col-12 col-lg-auto">
+              <div class="footer-left d-flex flex-column mt-4">
+                <div class="footer-group mb-5 d-flex align-items-start">
+                  <span class="footer-label me-4 mb-3">STORES</span>
+                  <div class="footer-values">
+                    <a href="#" class="d-block mb-3">Austria</a>
+                    <a href="#" class="d-block mb-3">India</a>
+                    <a href="#" class="d-block">Japan</a>
+                  </div>
+                </div>
+
+                <div
+                  class="footer-group footer-contact d-flex align-items-start"
+                >
+                  <span class="footer-label me-4">CONTACT</span>
+                  <div class="footer-values">
+                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
+                      >dhvbfsjbn@jndmv.vovk</a
+                    >
+                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
+                      >dhvbfsjbn@jndmv.vovk</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="col-12 col-lg-auto">
+              <div class="footer-right d-flex flex-column mt-4">
+                <div class="footer-group d-flex align-items-start">
+                  <span class="footer-label me-4">FOLLOW US</span>
+                  <div class="footer-values">
+                    <a href="#" class="d-block mb-3">Instagram</a>
+                    <a href="#" class="d-block mb-3">YouTube</a>
+                    <a href="#" class="d-block">Twitter</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="./index.html" class="footer-copy d-block text-center mt-4"
+            >© Aura all Rights Reserved, 2025</a
+          >
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap Js -->
     <script
