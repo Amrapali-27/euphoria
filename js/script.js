@@ -1,23 +1,3 @@
-// const navbarCollapsed = document.querySelector(".navbar-collapsed");
-// const menu = document.querySelector(".menu");
-
-// let isMenuOpen = false;
-
-// menu.addEventListener("click", () => {
-//   navbarCollapsed.classList.toggle("active");
-//   menu.classList.toggle("animate");
-
-//   if (isMenuOpen) {
-//     document.documentElement.style.overflow = "auto";
-//     document.body.style.overflow = "auto";
-//     isMenuOpen = false;
-//   } else {
-//     document.documentElement.style.overflow = "hidden";
-//     document.body.style.overflow = "hidden";
-//     isMenuOpen = true;
-//   }
-// });
-
 
 AOS.init({
     once: true,
@@ -36,6 +16,7 @@ AOS.init({
     slidesPerView: 1,
     loop: true,
     speed: 900,
+    effect: "fade",
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
@@ -170,3 +151,28 @@ document.addEventListener('DOMContentLoaded', () => {
   new StandoutsCarousel();
 });
 
+
+
+
+
+
+document.querySelectorAll('.marquee').forEach(marquee => {
+  const track = marquee.querySelector('.marquee-track');
+
+  marquee.addEventListener('mouseenter', () => {
+    track.style.animationPlayState = 'paused';
+  });
+
+  marquee.addEventListener('mouseleave', () => {
+    track.style.animationPlayState = 'running';
+  });
+
+  marquee.addEventListener('click', () => {
+    track.style.animationPlayState = 'paused';
+
+    // Resume after short delay (UX friendly)
+    setTimeout(() => {
+      track.style.animationPlayState = 'running';
+    }, 400);
+  });
+});

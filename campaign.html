@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--AOS css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--custom css-->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/campaign.css" />
+    <title>AURA</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        class="navbar navbar-expand-lg bg-body-tertiary"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./Assets/Images/AURA.png" alt="Logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center active"
+                  aria-current="page"
+                  href="./about.html"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./campaign.html"
+                  >CAMPAIGN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#">PAGES</a>
+              </li>
+            </ul>
+            <div class="d-flex primary-btn">
+              <a href="" class="mx-auto"
+                ><span>CONTACT US</span>
+                <svg
+                  width="25"
+                  height="8"
+                  viewBox="0 0 25 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.3536 4.03553C24.5488 3.84027 24.5488 3.52369 24.3536 3.32843L21.1716 0.146446C20.9763 -0.048816 20.6597 -0.048816 20.4645 0.146446C20.2692 0.341708 20.2692 0.658291 20.4645 0.853553L23.2929 3.68198L20.4645 6.51041C20.2692 6.70567 20.2692 7.02225 20.4645 7.21751C20.6597 7.41278 20.9763 7.41278 21.1716 7.21751L24.3536 4.03553ZM0 4.18198L24 4.18198V3.18198L0 3.18198L0 4.18198Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CAMPAIGN SECTION -->
+    <section class="campaigns-section">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2
+            class="campaigns-title"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            CAMPAIGNS
+          </h2>
+        </header>
+
+        <div class="campaigns-wrapper position-relative">
+          <!-- Left content -->
+          <div
+            class="campaign-left d-flex d-lg-block flex-column"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h3 class="campaign-subtitle">SPRING 2025</h3>
+            <p class="campaign-text">
+              Our Spring/Summer collection is a celebration of simplicity and
+              effortless elegance. Inspired by the beauty of nature, this
+              collection features breezy silhouettes, floral prints, and
+              lightweight fabrics—looks that are perfect for the warm weather.
+            </p>
+          </div>
+
+          <!-- Crnter image -->
+          <div
+            class="campaign-visual"
+            aria-hidden="true"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          ></div>
+
+          <!-- Right content -->
+          <div
+            class="campaign-right d-flex d-lg-block flex-column"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h3 class="campaign-subtitle">SUMMER 2025</h3>
+            <p class="campaign-text">
+              Black and white fashion is a timeless choice, and summer offers
+              the perfect opportunity to experiment with this classic palette in
+              lightweight, breezy fabrics. Whether you're dressing for a casual
+              outing, work, or an evening soirée, black and white never go out
+              of style.
+            </p>
+
+            <div class="btn-dark">
+              <a
+                href="#"
+                class="secondary-btn mt-4 align-self-center align-self-xl-start"
+              >
+                DISCOVER MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INITIATIVE SECTION -->
+    <section class="initiative-section">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <!-- Left -->
+          <div class="col-lg-3 initiative-left order-3 order-lg-1">
+            <h2>DESIGN TENETS</h2>
+            <p>
+              Our new collection is built on the tenets of sustainability,
+              timeless design, and exceptional craftsmanship. Each piece is
+              crafted with the belief that fashion should not only make a
+              statement but also have a positive impact on our world.
+            </p>
+          </div>
+
+          <!-- Center -->
+          <div
+            class="col-lg-4 initiative-center text-center position-relative order-1"
+          >
+            <h3 class="section-heading">
+              <span>A</span> DEEPER DIVE WITHIN THE INITIATIVE
+            </h3>
+
+            <img
+              src="./Assets/Images/initiative-model.png"
+              class="img-fluid tall-image mx-auto d-block"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            />
+          </div>
+
+          <!-- Circle -->
+          <div
+            class="col-lg-2 initiative-circle d-flex justify-content-center order-4 order-lg-3"
+          >
+            <img
+              src="./Assets/Images/initiative-dance.png"
+              class="img-fluid rounded-circle"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="500"
+            />
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-3 initiative-right order-2 order-lg-4">
+            <h2>STANDOUTS</h2>
+            <p>
+              Our Spring/Summer collection is a celebration of simplicity and
+              effortless elegance. Inspired by the beauty of nature, this
+              collection features breezy silhouettes, floral prints, and
+              lightweight fabrics that are perfect for the warm weather.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS SECTION -->
+    <section class="press-section">
+      <div class="container">
+        <header class="press-header mb-4">
+          <h2 class="press-title fw-semibold" data-aos="fade-up">
+            Press & Media Coverage
+          </h2>
+        </header>
+
+        <p class="press-intro mb-5" data-aos="fade-up" data-aos-delay="100">
+          Our campaign has been making waves, and we're thrilled to share the
+          spotlight! From fashion editors to lifestyle influencers, here's what
+          they have to say about our collection:
+        </p>
+
+        <!-- Press Quotes -->
+        <div class="press-list mb-4 d-flex flex-column">
+          <article
+            class="press-item mb-4"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          >
+            <blockquote>
+              “A bold step into modern elegance. The campaign showcases a
+              harmonious blend of minimalism and sophistication that sets new
+              benchmarks in contemporary fashion.”
+            </blockquote>
+            <cite class="fs-6 fw-semibold text-secondary"
+              >— Style Chronicles Magazine</cite
+            >
+          </article>
+
+          <article
+            class="press-item mb-4"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <blockquote>
+              “Every piece tells a story. The focus on black-and-white attire is
+              refreshing, bringing a timeless yet futuristic aesthetic to the
+              forefront of fashion.”
+            </blockquote>
+            <cite class="fs-6 fw-semibold text-secondary"
+              >— Trendsetter Daily</cite
+            >
+          </article>
+
+          <article
+            class="press-item mb-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <blockquote>
+              “The campaign brings innovation with subtle touches of 3D effects,
+              an homage to the future of design. A must-watch for anyone
+              passionate about cutting-edge styles.”
+            </blockquote>
+            <cite class="fs-6 fw-semibold text-secondary"
+              >— Fashion Forward Blog</cite
+            >
+          </article>
+
+          <article
+            class="press-item mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <blockquote>
+              “The campaign has elevated minimalism to a true art form, proving
+              that simplicity speaks volumes.”
+            </blockquote>
+            <cite class="fs-6 fw-semibold text-secondary"
+              >— Global Vogue Express</cite
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <div class="site-footer">
+        <div class="container">
+          <div
+            class="footer-inner d-flex flex-column flex-lg-row justify-content-between align-items-center"
+          >
+            <!-- Contact Form -->
+            <h3 class="footer-title">SHARE YOUR STYLE STORY</h3>
+
+            <div class="footer-form">
+              <form class="d-flex flex-column mb-4">
+                <input type="text" class="mb-4" placeholder="NAME" />
+                <input type="email" class="mb-4" placeholder="EMAIL" />
+                <textarea class="mb-4" placeholder="MESSAGE"></textarea>
+                <button class="secondary-btn align-self-start">SEND US</button>
+              </form>
+            </div>
+
+            <!-- Right: Models Image -->
+            <div class="footer-models">
+              <img
+                src="./Assets/Images/footer-models.png"
+                alt="Fashion Models"
+              />
+            </div>
+          </div>
+
+          <div class="footer-bottom row mt-4">
+            <!-- Left columns -->
+            <div class="col-12 col-lg-auto">
+              <div class="footer-left d-flex flex-column mt-4">
+                <div class="footer-group mb-5 d-flex align-items-start">
+                  <span class="footer-label me-4 mb-3">STORES</span>
+                  <div class="footer-values">
+                    <a href="#" class="d-block mb-3">Austria</a>
+                    <a href="#" class="d-block mb-3">India</a>
+                    <a href="#" class="d-block">Japan</a>
+                  </div>
+                </div>
+
+                <div
+                  class="footer-group footer-contact d-flex align-items-start"
+                >
+                  <span class="footer-label me-4">CONTACT</span>
+                  <div class="footer-values">
+                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
+                      >dhvbfsjbn@jndmv.vovk</a
+                    >
+                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
+                      >dhvbfsjbn@jndmv.vovk</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="col-12 col-lg-auto">
+              <div class="footer-right d-flex flex-column mt-4">
+                <div class="footer-group d-flex align-items-start">
+                  <span class="footer-label me-4">FOLLOW US</span>
+                  <div class="footer-values">
+                    <a href="#" class="d-block mb-3">Instagram</a>
+                    <a href="#" class="d-block mb-3">YouTube</a>
+                    <a href="#" class="d-block">Twitter</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="./index.html" class="footer-copy d-block text-center mt-4"
+            >© Aura all Rights Reserved, 2025</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--AOS js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

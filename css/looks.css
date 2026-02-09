@@ -1,0 +1,156 @@
+/* ===========================
+   LOOK SECTION
+=========================== */
+
+.look-slide {
+  display: grid;
+  grid-template-columns: 220px auto 220px;
+  justify-content: center;
+  gap: 2px;
+}
+
+.look-left,
+.look-right {
+  max-width: 175px;
+}
+
+/* Figma positioning (DESKTOP) */
+.look-left {
+  transform: translateX(53px) translateY(230px);
+}
+
+.look-right {
+  transform: translateY(224px);
+}
+
+.look-info {
+  transform: translateY(-10px);
+}
+
+.look-info h3 {
+  font-size: 32px;
+}
+
+.look-info strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.look-info span {
+  font-size: 12px;
+}
+
+/* Hexagon */
+.hex-image {
+  width: 657px;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
+  display: block;
+
+  clip-path: polygon(50% 0%, 98% 25%, 98% 75%, 50% 100%, 3% 75%, 3% 25%);
+}
+
+@media (max-width: 1200px) {
+ 
+ /* LOOKS SECTION  */
+  .hex-image {
+    width: 600px;
+  }
+
+  .look-info h3 {
+    font-size: 22px;
+  }
+
+  .look-info strong {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+
+  .look-info span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  
+
+  /* LOOKS SECTION  */
+  .look-left,
+  .look-right,
+  .look-info {
+    transform: none;
+    max-width: 100%;
+  }
+
+  .look-left img,
+  .look-right img {
+    /* display: none; */
+    max-width: 100px;
+  }
+
+  /* Center hexagon */
+  .hex-image {
+    width: 400px;
+  }
+
+  .look-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .look-info strong {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  .look-info span {
+    font-size: 10px;
+  }
+
+  .look-left img,
+  .look-right {
+    display: none;
+  }
+
+  .look-left,
+  .look-right {
+    transform: none;
+    max-width: 100%;
+  }
+
+  .look-info {
+    text-align: center;
+  }
+
+  .look-info {
+    transform: translateY(18px);
+  }
+
+  .look-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  
+}
+
+@media screen and (max-width: 576px) {
+ 
+
+  /* LOOKS SECTION  */
+  .hex-image {
+    width: 260px;
+  }
+
+  .look-info h3 {
+    font-size: 18px;
+  }
+
+  .look-info span {
+    font-size: 13px;
+  }
+}

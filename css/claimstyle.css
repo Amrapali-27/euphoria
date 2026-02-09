@@ -1,0 +1,225 @@
+.claim-style-section {
+  padding: 80px 0;
+}
+
+.claim-title {
+  font-size: 32px;
+
+  letter-spacing: 2px;
+}
+
+/* Marquee base */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: marquee-right 45s linear infinite;
+  will-change: transform;
+}
+
+/* Direction control */
+.marquee-left .marquee-track {
+  animation: marquee-left 45s linear infinite;
+}
+
+/* Animations */
+@keyframes marquee-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Product card */
+.product-card {
+  max-width: 220px;
+
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.product-card .price {
+  background: #d9d9d9;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==============================
+   CAMPAIGN FOOTER BASE
+============================== */
+
+.campaign-footer {
+  background-color: #000;
+  background-image: url("../Assets/Images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* ==============================
+   TOP AREA
+============================== */
+
+.campaign-footer-visual img {
+  max-width: 380px;
+}
+
+/* ==============================
+   NEWSLETTER
+============================== */
+
+.campaign-footer-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.campaign-footer-form {
+  position: relative;
+  width: 460px;
+  padding: 36px;
+  border-radius: 20px;
+  background-color: rgba(217, 217, 217, 0.01);
+  box-shadow: inset 0 10px 10px #A9A6A4;
+  backdrop-filter: blur(40px);
+}
+
+/* Inputs */
+.campaign-footer-input {
+  background: #f7f3f0;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+}
+
+.campaign-footer-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.25);
+}
+
+/* ==============================
+   FOOTER LINKS
+============================== */
+
+.campaign-footer-group {
+  column-gap: 40px;
+}
+
+.campaign-footer-label {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.campaign-footer-links a {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #cfcfcf;
+  margin-bottom: 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.campaign-footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.campaign-footer-links a:hover {
+  color: #ffffff;
+}
+
+.campaign-footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ==============================
+   COPYRIGHT
+============================== */
+
+.campaign-footer-copy {
+  font-size: 8px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 992px) {
+  .campaign-footer-visual {
+    display: none;
+  }
+
+  .campaign-footer-form {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .campaign-footer-top {
+    gap: 48px;
+  }
+
+  .campaign-footer-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .campaign-footer-form {
+    padding: 24px;
+  }
+
+  .campaign-footer-group {
+    column-gap: 24px;
+  }
+}

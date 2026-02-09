@@ -32,7 +32,7 @@
         class="navbar navbar-expand-lg bg-body-tertiary"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.html">
             <img src="./Assets/Images/AURA.png" alt="Logo" />
           </a>
 
@@ -52,12 +52,14 @@
                 <a
                   class="nav-link text-center active"
                   aria-current="page"
-                  href="#"
+                  href="./about.html"
                   >ABOUT</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#">CAMPAIGN</a>
+                <a class="nav-link text-center" href="./campaign.html"
+                  >CAMPAIGN</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-center" href="#">PAGES</a>
@@ -129,32 +131,45 @@
 
           <!-- Center -->
           <div
-            class="col-lg-4 initiative-center text-center position-relative order-1"
+            class="col-lg-6 initiative-center text-center position-relative order-1"
           >
             <h3 class="section-heading">
               <span>A</span> DEEPER DIVE WITHIN THE INITIATIVE
             </h3>
 
-            <img
+            <div class="initiative-model">
+              <img
               src="./Assets/Images/initiative-model.png"
-              class="img-fluid tall-image mx-auto d-block"
+              class="h-100 w-100 object-fit-cover tall-image mx-auto d-block"
               data-aos="fade-up"
               data-aos-duration="1000"
             />
-          </div>
-
-          <!-- Circle -->
-          <div
-            class="col-lg-2 initiative-circle d-flex justify-content-center order-4 order-lg-3"
-          >
-            <img
+            <div class="initiative-dance">
+              <img
               src="./Assets/Images/initiative-dance.png"
-              class="img-fluid rounded-circle"
+              class="h-100 w-100 object-fit-cover rounded-circle"
               data-aos="fade-left"
               data-aos-offset="200"
               data-aos-duration="500"
             />
+            </div>
+            </div>
+
+            
           </div>
+
+          <!-- Circle -->
+          <!-- <div
+            class="col-lg-2 initiative-circle d-flex justify-content-center order-4 order-lg-3"
+          >
+            <img
+              src="./Assets/Images/initiative-dance.png"
+              class="h-100 w-100 object-fit-cover rounded-circle"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="500"
+            />
+          </div> -->
 
           <!-- Right -->
           <div class="col-lg-3 initiative-right order-2 order-lg-4">
@@ -306,7 +321,7 @@
             <img
               src="./Assets/Images/discover-model.png"
               alt="Fashion model"
-              class="img-fluid discover-model"
+              class="h-100 w-100 object-fit-cover discover-model"
             />
           </div>
 
@@ -319,7 +334,6 @@
     </section>
 
     <!-- LOOKS SECTION -->
-
     <section class="looks-section py-5">
       <div class="container">
         <div class="swiper looks-swiper">
@@ -329,11 +343,13 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                  <img
-                    src="./Assets/Images/look1.png"
-                    alt="Look preview"
-                    class="img-fluid mb-2"
-                  />
+                  <div class="look-left-img">
+                    <img
+                      src="./Assets/Images/look1.png"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
 
                   <div class="look-info mt-2">
                     <h3 class="mb-2">ALL LOOKS</h3>
@@ -370,11 +386,13 @@
 
                 <!-- RIGHT -->
                 <div class="look-right">
-                  <img
-                    src="./Assets/Images/look2.png"
-                    alt="Side look"
-                    class="img-fluid"
-                  />
+                  <div class="look-right-img">
+                    <img
+                      src="./Assets/Images/look2.png"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
                 </div>
               </article>
             </div>
@@ -384,11 +402,13 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                  <img
-                    src="./Assets/Images/slide21.jpg"
-                    alt="Look preview"
-                    class="img-fluid mb-2"
-                  />
+                 <div class="look-left-img">
+                    <img
+                      src="./Assets/Images/slide21.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
 
                   <div class="look-info mt-2">
                     <h3 class="mb-2">ALL LOOKS</h3>
@@ -425,12 +445,13 @@
 
                 <!-- RIGHT -->
                 <div class="look-right">
-                  <img
-                    src="./Assets/Images/slide23.jpg"
-                    alt="Side look"
-                    class="img-fluid"
-                  />
-                </div>
+                  <div class="look-right-img">
+                    <img
+                      src="./Assets/Images/slide23.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
               </article>
             </div>
 
@@ -439,11 +460,13 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                  <img
-                    src="./Assets/Images/slide31.jpg"
-                    alt="Look preview"
-                    class="img-fluid mb-2"
-                  />
+                  <div class="look-left-img">
+                    <img
+                      src="./Assets/Images/slide31.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
 
                   <div class="look-info mt-2">
                     <h3 class="mb-2">ALL LOOKS</h3>
@@ -480,12 +503,13 @@
 
                 <!-- RIGHT -->
                 <div class="look-right">
-                  <img
-                    src="./Assets/Images/slide33.jpg"
-                    alt="Side look"
-                    class="img-fluid"
-                  />
-                </div>
+                  <div class="look-right-img">
+                    <img
+                      src="./Assets/Images/slide33.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
               </article>
             </div>
 
@@ -494,11 +518,13 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                  <img
-                    src="./Assets/Images/slide41.jpg"
-                    alt="Look preview"
-                    class="img-fluid mb-2"
-                  />
+                 <div class="look-left-img">
+                    <img
+                      src="./Assets/Images/slide41.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
 
                   <div class="look-info mt-2">
                     <h3 class="mb-2">ALL LOOKS</h3>
@@ -535,12 +561,13 @@
 
                 <!-- RIGHT -->
                 <div class="look-right">
-                  <img
-                    src="./Assets/Images/slide43.jpg"
-                    alt="Side look"
-                    class="img-fluid"
-                  />
-                </div>
+                  <div class="look-right-img">
+                    <img
+                      src="./Assets/Images/slide43.jpg"
+                      alt="Look preview"
+                      class="h-100 w-100 object-fit-cover mb-2"
+                    />
+                  </div>
               </article>
             </div>
           </div>
@@ -712,22 +739,24 @@
           <div class="footer-bottom row mt-4">
             <!-- Left columns -->
             <div class="col-12 col-lg-auto">
-              <div class="footer-left d-flex flex-column mt-4">
-                <div class="footer-group mb-5 d-flex align-items-start">
-                  <span class="footer-label me-4 mb-3">STORES</span>
+              <div class="footer-left d-block d-lg-flex flex-column mt-4">
+                <div class="footer-group mb-5 d-block d-lg-flex text-center">
+                  <span class="footer-label">STORES</span>
                   <div class="footer-values">
-                    <a href="#" class="d-block mb-3">Austria</a>
+                    <a href="#" class="d-block mb-3 mt-3">Austria</a>
                     <a href="#" class="d-block mb-3">India</a>
                     <a href="#" class="d-block">Japan</a>
                   </div>
                 </div>
 
                 <div
-                  class="footer-group footer-contact d-flex align-items-start"
+                  class="footer-group footer-contact d-block d-lg-flex text-center"
                 >
-                  <span class="footer-label me-4">CONTACT</span>
+                  <span class="footer-label">CONTACT</span>
                   <div class="footer-values">
-                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
+                    <a
+                      href="mailto:dhvbfsjbn@jndmv.vovk"
+                      class="d-block mb-3 mt-3"
                       >dhvbfsjbn@jndmv.vovk</a
                     >
                     <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
@@ -741,10 +770,10 @@
             <!-- Right column -->
             <div class="col-12 col-lg-auto">
               <div class="footer-right d-flex flex-column mt-4">
-                <div class="footer-group d-flex align-items-start">
-                  <span class="footer-label me-4">FOLLOW US</span>
+                <div class="footer-group d-block d-lg-flex text-center">
+                  <span class="footer-label mb-4">FOLLOW US</span>
                   <div class="footer-values">
-                    <a href="#" class="d-block mb-3">Instagram</a>
+                    <a href="#" class="d-block mb-3 mt-3">Instagram</a>
                     <a href="#" class="d-block mb-3">YouTube</a>
                     <a href="#" class="d-block">Twitter</a>
                   </div>
