@@ -789,7 +789,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .banner-content: {
+  .banner-content {
     top: 100%;
   }
   /* DISCOVER SECTION */
