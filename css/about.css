@@ -1,8 +1,10 @@
-body{
-    background:#191717;
+body {
+  background: #191717;
 }
 
-
+/* ===============================
+   ABOUT US BANNER
+================================ */
 
 .about-title {
   font-size: 32px;
@@ -12,17 +14,16 @@ body{
 
 .about-intro {
   position: relative;
-  min-height: 100vh;background: white !important;
+  min-height: 100vh;
+  background: white !important;
 }
 
-/* Main Image */
 .about-main-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Content */
 .about-content {
   position: relative;
 }
@@ -34,14 +35,11 @@ body{
   color: #222;
 }
 
-/* Outline Box */
 .about-outline-box1 {
   position: relative;
   width: 100%;
   max-width: 465px;
   height: 179px;
-
-  /* IMPORTANT */
   background: transparent;
 }
 
@@ -69,7 +67,6 @@ body{
   pointer-events: none;
 }
 
-/* Values */
 .about-values {
   padding: 0;
   max-width: 300px;
@@ -84,7 +81,6 @@ body{
   font-size: 12px;
 }
 
-/* Overlay Image */
 .about-overlay-image {
   position: absolute;
   right: 32%;
@@ -115,11 +111,12 @@ body{
   width: 100%;
 }
 
-
 .about-main-image img,
 .about-overlay-image img,
 .about-mini-image img {
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
 }
 
 .about-main-image:hover img,
@@ -130,7 +127,9 @@ body{
 }
 
 .about-values li span svg {
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 .about-values li:hover span svg {
@@ -138,50 +137,43 @@ body{
   opacity: 0.8;
 }
 
-
-
-/* SECTION BASE */
+/* ===============================
+    VISION SECTION 
+================================ */
 .vision-section {
-  
   padding: 120px 0;
 }
-.bg-color{
-    background: #191717;
-    padding: 20px 0;
-} 
+.bg-color {
+  background: #191717;
+  padding: 20px 0;
+}
 
-/* TITLE */
 .vision-title {
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-/* TEXT */
 .vision-description {
   font-size: 14px;
   line-height: 1.8;
   max-width: 420px;
-  color: #F5F4F1;
+  color: #f5f4f1;
   margin-bottom: 532px;
 }
 
-.vision-points li{
-    font-size: 14px;
-    
+.vision-points li {
+  font-size: 14px;
 }
 
-/* MAIN IMAGE */
 .vision-main-image {
-    max-width: 571px;
+  max-width: 571px;
 }
 
 .vision-main-image img {
   width: 100%;
- 
 }
 
-/* OVERLAP GROUP */
 .vision-overlap-group {
   position: absolute;
   left: -180px;
@@ -190,7 +182,6 @@ body{
   height: 420px;
 }
 
-/* OUTLINE BOX */
 .vision-outline-box {
   position: absolute;
   top: -59px;
@@ -198,30 +189,29 @@ body{
   width: 290px;
   height: 104px;
 
-  border: 1px solid rgba(255,255,255,0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 
   /* Contrast-aware blending */
   mix-blend-mode: difference;
 
-  /* THIS is what you were missing */
   -webkit-mask-image: linear-gradient(
     135deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.6) 40%,
-    rgba(0,0,0,0.15) 70%,
-    rgba(0,0,0,0) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.15) 70%,
+    rgba(0, 0, 0, 0) 100%
   );
   mask-image: linear-gradient(
     135deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.6) 40%,
-    rgba(0,0,0,0.15) 70%,
-    rgba(0,0,0,0) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.15) 70%,
+    rgba(0, 0, 0, 0) 100%
   );
 
   pointer-events: none;
 }
-/* SMALL IMAGES */
+
 .vision-image {
   position: absolute;
   max-width: 316px;
@@ -232,7 +222,6 @@ body{
   left: -18px;
   width: 100%;
   z-index: 1;
-  
 }
 
 .vision-image-light {
@@ -244,24 +233,26 @@ body{
 
 .vision-image img {
   width: 100%;
- 
 }
 
 .vision-points li svg {
-  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transition:
+    transform 0.4s ease-out,
+    opacity 0.4s ease-out;
 }
 
 .vision-points li:hover svg {
   transform: scale(1.2);
- 
+
   opacity: 0.8;
 }
 
-
-
-
+/* ===============================
+    RESPONSIVE
+================================ */
 
 @media screen and (max-width: 1200px) {
+  /* ABOUT US BANNER */
   .about-mini-image img,
   .about-bottom-visual {
     display: none;
@@ -269,6 +260,7 @@ body{
 }
 
 @media screen and (max-width: 1024px) {
+  /* ABOUT US BANNER */
   .about-overlay-image {
     position: absolute;
     right: 41%;
@@ -279,6 +271,7 @@ body{
 }
 
 @media screen and (max-width: 992px) {
+  /* ABOUT US BANNER */
   .about-main-image {
     max-width: 500px;
     margin: 0 auto;
@@ -313,22 +306,14 @@ body{
     margin: 0 auto;
   }
 
-
-
-
-  /* .vision-overlap-group {
-    position: static;
-    width: 220px;
-    height: auto;
-    margin-top: 30px;
-  } */
+  /* VISION SECTION */
 
   .vision-outline-box {
     display: none;
   }
 
   .vision-image {
-   display: none;
+    display: none;
     max-width: 100%;
     margin-bottom: 20px;
   }
@@ -337,11 +322,10 @@ body{
     max-width: 100%;
     margin-bottom: 20px;
   }
-
- 
 }
 
 @media screen and (max-width: 768px) {
+  /* ABOUT US BANNER */
   .about-overlay-image {
     display: none;
   }

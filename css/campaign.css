@@ -60,11 +60,11 @@
    INITIATIVE SECTION
 =========================== */
 .initiative-section {
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
-.initiative-left h2,
-.initiative-right h2 {
+.initiative-left h3,
+.initiative-right h3 {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -83,24 +83,17 @@
   justify-content: flex-end;
 }
 
-/* .initiative-circle {
-  display: flex;
-  align-items: flex-end;
-} */
-
 .initiative-right {
   padding-top: 8px;
 }
 
 .initiative-model {
   max-width: 317px;
-  /* height: 554px; */
   position: relative;
 }
 
 .initiative-dance {
   max-width: 317px;
-  /* height: 317px; */
   position: absolute;
   right: -83%;
   bottom: 0;
@@ -109,7 +102,6 @@
 .section-heading {
   font-size: 36px;
   font-weight: 800;
-
   letter-spacing: 6px;
   text-transform: uppercase;
 
@@ -123,7 +115,6 @@
   background-image:
     linear-gradient(90deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.1) 44%, #000 78%),
     url("../Assets/Images/banner-img.png");
-
   background-repeat: no-repeat;
 
   background-size: 1200px auto;
@@ -167,12 +158,12 @@
 }
 
 .press-item cite {
-  font-size: 15px;
+  font-size: 13px;
   color: #555;
 }
 
 @media screen and (max-width: 992px) {
-  /* CAMPAIGN SECTION     */
+  /* CAMPAIGN SECTION */
   .campaign-left,
   .campaign-right {
     position: static;
@@ -195,10 +186,12 @@
   }
 
   /* INITIATIVE SECTION */
-  .section-heading {
-    position: static;
-    transform: none;
+.section-heading {
+    position: absolute;
+
+    left: 0%;
     width: 100%;
+    transform: translateX(0%);
     margin-bottom: 20px;
     text-align: center;
   }
@@ -212,9 +205,39 @@
   .initiative-circle {
     margin-top: 30px;
   }
+
+  .initiative-model {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  .initiative-dance {
+    max-width: 200px;
+    position: absolute;
+    right: -68%;
+    bottom: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+ 
+  /* INITIATIVE SECTION */
+  .initiative-dance {
+    max-width: 150px;
+    position: absolute;
+    right: -51%;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
+
+  /* INITIATIVE SECTION */
+  .initiative-dance {
+    display: none;
+  }
+
   /* PRESS SECTION  */
 
   .press-intro,

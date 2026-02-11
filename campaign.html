@@ -47,7 +47,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link text-center active"
@@ -61,12 +61,41 @@
                   >CAMPAIGN</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-center" href="#">PAGES</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-center"
+                  href="#"
+                  id="pagesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="pagesDropdown"
+                >
+                  <li><a class="dropdown-item" href="./index.html">HOME</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./claimstyle.html"
+                      >CLAIM YOUR STYLE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./looks.html">ALL LOOKS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./journey.html"
+                      >OUR JOURNEY</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                </ul>
               </li>
             </ul>
-            <div class="d-flex primary-btn">
-              <a href="" class="mx-auto"
+            <div class="d-flex hdr-btn primary-btn">
+              <a href="./contact.html" class="mx-auto"
                 ><span>CONTACT US</span>
                 <svg
                   width="25"
@@ -86,7 +115,6 @@
         </div>
       </nav>
     </header>
-
     <!-- CAMPAIGN SECTION -->
     <section class="campaigns-section">
       <div class="container">
@@ -159,7 +187,7 @@
         <div class="row align-items-stretch">
           <!-- Left -->
           <div class="col-lg-3 initiative-left order-3 order-lg-1">
-            <h2>DESIGN TENETS</h2>
+            <h3>DESIGN TENETS</h3>
             <p>
               Our new collection is built on the tenets of sustainability,
               timeless design, and exceptional craftsmanship. Each piece is
@@ -172,9 +200,9 @@
           <div
             class="col-lg-6 initiative-center text-center position-relative order-1"
           >
-            <h3 class="section-heading">
+            <h2 class="section-heading">
               <span>A</span> DEEPER DIVE WITHIN THE INITIATIVE
-            </h3>
+            </h2>
 
             <div class="initiative-model">
               <img
@@ -195,22 +223,9 @@
             </div>
           </div>
 
-          <!-- Circle -->
-          <!-- <div
-            class="col-lg-2 initiative-circle d-flex justify-content-center order-4 order-lg-3"
-          >
-            <img
-              src="./Assets/Images/initiative-dance.png"
-              class="h-100 w-100 object-fit-cover rounded-circle"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-duration="500"
-            />
-          </div> -->
-
           <!-- Right -->
           <div class="col-lg-3 initiative-right order-2 order-lg-4">
-            <h2>STANDOUTS</h2>
+            <h3>STANDOUTS</h3>
             <p>
               Our Spring/Summer collection is a celebration of simplicity and
               effortless elegance. Inspired by the beauty of nature, this
@@ -227,7 +242,7 @@
       <div class="container">
         <header class="press-header mb-4">
           <h2 class="press-title fw-semibold" data-aos="fade-up">
-            Press & Media Coverage
+            PRESS MEDIA & COVERAGE
           </h2>
         </header>
 
@@ -302,7 +317,6 @@
     </section>
 
     <!-- FOOTER SECTION -->
-
     <footer>
       <div class="site-footer">
         <div class="container">
@@ -314,9 +328,32 @@
 
             <div class="footer-form">
               <form class="d-flex flex-column mb-4">
-                <input type="text" class="mb-4" placeholder="NAME" />
-                <input type="email" class="mb-4" placeholder="EMAIL" />
-                <textarea class="mb-4" placeholder="MESSAGE"></textarea>
+                <input
+                  type="text"
+                  class="mb-4"
+                  placeholder="NAME"
+                  id="user-name"
+                  name="name"
+                  aria-label="Name"
+                  required
+                  autocomplete="name"
+                  maxlength="50"
+                />
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  class="mb-4"
+                  placeholder="EMAIL"
+                  name="email"
+                  required
+                  aria-label="Email address for newsletter subscription"
+                />
+                <textarea
+                  id="messageBox"
+                  class="mb-4"
+                  placeholder="MESSAGE"
+                ></textarea>
+
                 <button class="secondary-btn align-self-start">SEND US</button>
               </form>
             </div>

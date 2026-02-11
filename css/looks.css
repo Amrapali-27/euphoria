@@ -1,7 +1,9 @@
 /* ===========================
    LOOK SECTION
 =========================== */
-
+.looks-section{
+  padding: 100px 0;
+}
 .look-slide {
   display: grid;
   grid-template-columns: 220px auto 220px;
@@ -61,6 +63,11 @@
   clip-path: polygon(50% 0%, 98% 25%, 98% 75%, 50% 100%, 3% 75%, 3% 25%);
 }
 
+.look-description{
+  font-size: 15px;
+  font-weight: 300;
+}
+
 @media (max-width: 1200px) {
   /* LOOKS SECTION  */
   .hex-image {
@@ -83,17 +90,22 @@
 
 @media screen and (max-width: 992px) {
   /* LOOKS SECTION  */
-  .look-left,
+ .look-left,
   .look-right,
   .look-info {
     transform: none;
-    max-width: 100%;
+    
   }
 
   .look-left img,
+.look-right img {
+ display: none;
+}
+
+  /* .look-left img,
   .look-right img {
     max-width: 100px;
-  }
+  } */
 
   /* Center hexagon */
   .hex-image {
@@ -114,15 +126,16 @@
     font-size: 10px;
   }
 
-  .look-left img,
-  .look-right {
+  .look-left-img,
+  .look-right-img {
     display: none;
   }
+  
 
   .look-left,
   .look-right {
-    transform: none;
-    max-width: 100%;
+    transform: none !important;
+    /* max-width: 100%; */
   }
 
   .look-info {
@@ -139,6 +152,7 @@
     align-items: center;
     gap: 24px;
   }
+  
 }
 
 @media screen and (max-width: 576px) {

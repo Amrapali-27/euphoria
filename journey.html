@@ -47,7 +47,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link text-center active"
@@ -61,12 +61,41 @@
                   >CAMPAIGN</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-center" href="#">PAGES</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-center"
+                  href="#"
+                  id="pagesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="pagesDropdown"
+                >
+                  <li><a class="dropdown-item" href="./index.html">HOME</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./claimstyle.html"
+                      >CLAIM YOUR STYLE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./looks.html">ALL LOOKS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./journey.html"
+                      >OUR JOURNEY</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                </ul>
               </li>
             </ul>
-            <div class="d-flex primary-btn">
-              <a href="" class="mx-auto"
+            <div class="d-flex hdr-btn primary-btn">
+              <a href="./contact.html" class="mx-auto"
                 ><span>CONTACT US</span>
                 <svg
                   width="25"

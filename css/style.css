@@ -142,7 +142,7 @@
 =========================== */
 
 .initiative-section {
-  padding: 200px 0;
+  padding: 0 0 100px 0;
 }
 
 .initiative-left h2,
@@ -165,10 +165,7 @@
   justify-content: flex-end;
 }
 
-/* .initiative-circle {
-  display: flex;
-  align-items: flex-end;
-} */
+
 
 .initiative-right {
   padding-top: 8px;
@@ -176,13 +173,11 @@
 
 .initiative-model {
   max-width: 317px;
-  /* height: 554px; */
   position: relative;
 }
 
 .initiative-dance {
   max-width: 317px;
-  /* height: 317px; */
   position: absolute;
   right: -83%;
   bottom: 0;
@@ -208,7 +203,7 @@
 
   background-repeat: no-repeat;
 
-  background-size: 1200px auto;
+  background-size: 940px auto;
   background-position: center 54%;
 
   -webkit-background-clip: text;
@@ -216,6 +211,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   z-index: 3;
+  
 }
 
 /* ===========================
@@ -223,7 +219,7 @@
 =========================== */
 
 .discover-section {
-  padding: 150px 0;
+  padding: 150px 0 50px;
 }
 
 /* Main model */
@@ -367,7 +363,6 @@
 .look-left,
 .look-right {
   max-width: 175px;
-  /* height: 263px; */
 }
 
 .look-left-img,
@@ -621,9 +616,9 @@
   margin: 0;
 }
 
-/* Responsive */
-@media (max-width: 1400px) {
-}
+/* ===============================
+   RESPONSIVE
+================================ */
 
 @media (max-width: 1200px) {
   /* HERO SECTION */
@@ -677,6 +672,10 @@
   }
 
   /* INITIATIVE SECTION */
+  .initiative-section {
+  padding: 180px 0 0;
+}
+
   .section-heading {
     position: absolute;
 
@@ -718,10 +717,14 @@
   }
 
   .look-left img,
+.look-right img {
+ display: none;
+}
+
+  /* .look-left img,
   .look-right img {
-    /* display: none; */
     max-width: 100px;
-  }
+  } */
 
   /* Center hexagon */
   .hex-image {
@@ -742,15 +745,16 @@
     font-size: 10px;
   }
 
-  .look-left img,
-  .look-right {
+  .look-left-img,
+  .look-right-img {
     display: none;
   }
+  
 
   .look-left,
   .look-right {
-    transform: none;
-    max-width: 100%;
+    transform: none !important;
+    /* max-width: 100%; */
   }
 
   .look-info {
@@ -790,6 +794,7 @@
 }
 
 @media screen and (max-width: 576px) {
+   /* HERO SECTION */
   .title1 {
     font-size: 48px !important;
   }
@@ -806,11 +811,11 @@
     right: 0;
     height: 100%;
   }
+
   /* DISCOVER SECTION */
   .discover-heading {
     font-size: 34px;
     font-weight: 800;
-
     letter-spacing: 3px;
   }
 

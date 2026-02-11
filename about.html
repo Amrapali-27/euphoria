@@ -47,7 +47,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link text-center active"
@@ -57,14 +57,33 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="./campaign.html">CAMPAIGN</a>
+                <a class="nav-link text-center" href="./campaign.html"
+                  >CAMPAIGN</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-center" href="#">PAGES</a>
-              </li>
+             <li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle text-center"
+    href="#"
+    id="pagesDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    PAGES
+  </a>
+  <ul class="dropdown-menu text-center" aria-labelledby="pagesDropdown">
+    <li><a class="dropdown-item" href="./index.html">HOME</a></li>
+    <li><a class="dropdown-item" href="./claimstyle.html">CLAIM YOUR STYLE</a></li>
+    <li><a class="dropdown-item" href="./looks.html">ALL LOOKS</a></li>
+    <li><a class="dropdown-item" href="./journey.html">OUR JOURNEY</a></li>
+    <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+  </ul>
+</li>
+
             </ul>
-            <div class="d-flex primary-btn">
-              <a href="" class="mx-auto"
+            <div class="d-flex hdr-btn primary-btn">
+              <a href="./contact.html" class="mx-auto"
                 ><span>CONTACT US</span>
                 <svg
                   width="25"
@@ -85,17 +104,21 @@
       </nav>
     </header>
 
+    <!-- ABOUT US BANNER -->
     <section class="about-intro py-5">
       <div class="container">
-        <!-- Section Heading -->
         <header class="text-center mb-5">
           <h1 class="about-title" data-aos="fade-up">ABOUT US</h1>
         </header>
 
         <div class="row align-items-start position-relative">
-          <!-- LEFT IMAGE -->
+          <!-- Left image -->
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <figure class="about-main-image" data-aos="fade-right"  data-aos-duration="1500">
+            <figure
+              class="about-main-image"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <img
                 src="./Assets/Images/about1.png"
                 alt="Aura fashion portrait"
@@ -104,7 +127,7 @@
             </figure>
           </div>
 
-          <!-- RIGHT CONTENT -->
+          <!-- Right content -->
           <div
             class="col-lg-6 about-content ps-lg-5 position-relative"
             data-aos="fade-left"
@@ -116,12 +139,12 @@
               modern individual.
             </p>
 
-            <!-- OUTLINED BOX -->
+            <!-- Outlined box -->
             <div class="about-outline-box1" data-aos="zoom-in"></div>
 
-            <!-- VALUES LIST -->
+            <!-- Values list -->
             <ul class="about-values list-unstyled">
-              <li data-aos="fade-up"  data-aos-duration="300">
+              <li data-aos="fade-up" data-aos-duration="300">
                 <span>
                   <svg
                     width="10"
@@ -136,7 +159,7 @@
                 <strong>Timeless Design</strong> – We create fashion that
                 transcends trends, celebrating individuality.
               </li>
-              <li data-aos="fade-up"  data-aos-duration="400">
+              <li data-aos="fade-up" data-aos-duration="400">
                 <span>
                   <svg
                     width="10"
@@ -151,7 +174,7 @@
                 <strong>Innovation & Artistry</strong> – Merging tradition with
                 technology to redefine modern elegance.
               </li>
-              <li data-aos="fade-up"  data-aos-duration="500">
+              <li data-aos="fade-up" data-aos-duration="500">
                 <span>
                   <svg
                     width="10"
@@ -169,12 +192,12 @@
             </ul>
           </div>
 
-          <!-- OVERLAPPING IMAGE -->
+          <!-- Overlapping image-->
           <figure
             class="about-overlay-image"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
-             data-aos-duration="1000"
+            data-aos-duration="1000"
           >
             <img
               src="Assets/Images/about2.png"
@@ -183,10 +206,7 @@
             />
           </figure>
 
-          <!-- GRADIENT OUTLINE BOX -->
-          <div class="about-outline-box about-outline-box--gradient"></div>
-
-          <!-- BOTTOM CONNECTOR + SMALL IMAGE -->
+          <!-- Bottom connector + Small image -->
           <div class="about-bottom-visual">
             <div class="about-outline-box1"></div>
           </div>
@@ -197,81 +217,121 @@
       </div>
     </section>
 
-
-
+    <!-- VISION SECTION -->
     <section class="vision-section text-light">
-  <div class="bg-color">
-    <div class="container ">
+      <div class="bg-color">
+        <div class="container">
+          <header class="text-center mb-5">
+            <h2 class="vision-title" data-aos="fade-up">OUR VISION</h2>
+          </header>
 
-    <!-- Section Title -->
-    <header class="text-center mb-5">
-      <h2 class="vision-title"  data-aos="fade-up">OUR VISION</h2>
-    </header>
+          <div class="row align-items-start">
+            <!-- Left content -->
+            <div class="col-lg-5 d-flex flex-column order-2 order-lg-1">
+              <p
+                class="vision-description"
+                data-aos="fade-up"
+                data-aos-duration="200"
+              >
+                We envision a world where fashion is accessible, sustainable,
+                and personal. Every stitch, fabric, and silhouette we create is
+                meant to inspire confidence and celebrate self-expression.
+              </p>
 
-    <div class="row align-items-start">
+              <ul class="vision-points list-unstyled mt-4 mt-lg-5">
+                <li class="mb-4" data-aos="fade-up" data-aos-duration="200">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="5" cy="5" r="5" fill="white" />
+                  </svg>
+                  Timeless & Trendy Designs – A curated collection of styles for
+                  every occasion.
+                </li>
+                <li class="mb-4" data-aos="fade-up" data-aos-duration="300">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="5" cy="5" r="5" fill="white" />
+                  </svg>
+                  Sustainable Fashion – Ethically sourced materials with a focus
+                  on reducing waste.
+                </li>
+                <li class="mb-4" data-aos="fade-up" data-aos-duration="500">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="5" cy="5" r="5" fill="white" />
+                  </svg>
+                  Custom Creations – Personalized fashion experiences tailored
+                  to your unique style.
+                </li>
+              </ul>
+            </div>
 
-      <!-- LEFT CONTENT -->
-      <div class="col-lg-5 d-flex flex-column order-2 order-lg-1">
-        <p class="vision-description" data-aos="fade-up"  data-aos-duration="200">
-          We envision a world where fashion is accessible, sustainable,
-          and personal. Every stitch, fabric, and silhouette we create is
-          meant to inspire confidence and celebrate self-expression.
-        </p>
+            <!-- Right image -->
+            <div class="col-lg-7 position-relative order-1 order-lg-2">
+              <figure
+                class="vision-main-image mx-auto"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="./Assets/Images/vision1.png"
+                  alt="Aura vision fashion model"
+                  class="img-fluid"
+                />
+              </figure>
 
-        <ul class="vision-points list-unstyled mt-4 mt-lg-5">
-          <li class="mb-4" data-aos="fade-up"  data-aos-duration="200"> 
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="5" r="5" fill="white"/>
-</svg>
- Timeless & Trendy Designs – A curated collection of styles for every occasion.</li>
-          <li class="mb-4" data-aos="fade-up"  data-aos-duration="300"> 
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="5" r="5" fill="white"/>
-</svg>
- Sustainable Fashion – Ethically sourced materials with a focus on reducing waste.</li>
-          <li class="mb-4" data-aos="fade-up"  data-aos-duration="500"> 
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="5" r="5" fill="white"/>
-</svg>
- Custom Creations – Personalized fashion experiences tailored to your unique style.</li>
-        </ul>
-      </div>
+              <!-- Overlapping Images Group -->
+              <div class="vision-overlap-group">
+                <div
+                  class="vision-outline-box"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                ></div>
 
-      <!-- RIGHT IMAGE -->
-      <div class="col-lg-7 position-relative order-1 order-lg-2">
-        <figure class="vision-main-image mx-auto"  data-aos="zoom-in"  data-aos-duration="1500">
-          <img src="./Assets/Images/vision1.png" alt="Aura vision fashion model" class="img-fluid">
-        </figure>
+                <figure
+                  class="vision-image vision-image-dark"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
+                  <img
+                    src="./Assets/Images/vision2.png"
+                    alt="Fashion editorial dark"
+                  />
+                </figure>
 
-        <!-- OVERLAPPING IMAGES GROUP -->
-        <div class="vision-overlap-group">
-
-          <div class="vision-outline-box"   data-aos="fade-down"  data-aos-duration="1500"></div>
-
-          <figure class="vision-image vision-image-dark"  data-aos="flip-left"
-        data-aos-duration="1000">
-            <img src="./Assets/Images/vision2.png" alt="Fashion editorial dark">
-          </figure>
-
-          <figure class="vision-image vision-image-light"   data-aos="flip-right"
-        data-aos-duration="800">
-            <img src="./Assets/Images/vision3.png" alt="Fashion editorial light">
-          </figure>
-
+                <figure
+                  class="vision-image vision-image-light"
+                  data-aos="flip-right"
+                  data-aos-duration="800"
+                >
+                  <img
+                    src="./Assets/Images/vision3.png"
+                    alt="Fashion editorial light"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- FOOTER SECTION -->
-
+    <!-- FOOTER SECTION -->
     <footer>
       <div class="site-footer">
         <div class="container">
@@ -279,13 +339,36 @@
             class="footer-inner d-flex flex-column flex-lg-row justify-content-between align-items-center"
           >
             <!-- Contact Form -->
-            <h3 class="footer-title">SHARE YOUR STYLE STORY</h3>
+            <p class="footer-title">SHARE YOUR STYLE STORY</p>
 
             <div class="footer-form">
               <form class="d-flex flex-column mb-4">
-                <input type="text" class="mb-4" placeholder="NAME" />
-                <input type="email" class="mb-4" placeholder="EMAIL" />
-                <textarea class="mb-4" placeholder="MESSAGE"></textarea>
+                <input
+                  type="text"
+                  class="mb-4"
+                  placeholder="NAME"
+                  id="user-name"
+                  name="name"
+                  aria-label="Name"
+                  required
+                  autocomplete="name"
+                  maxlength="50"
+                />
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  class="mb-4"
+                  placeholder="EMAIL"
+                  name="email"
+                  required
+                  aria-label="Email address for newsletter subscription"
+                />
+                <textarea
+                  id="messageBox"
+                  class="mb-4"
+                  placeholder="MESSAGE"
+                ></textarea>
+
                 <button class="secondary-btn align-self-start">SEND US</button>
               </form>
             </div>
@@ -349,8 +432,6 @@
         </div>
       </div>
     </footer>
-
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
