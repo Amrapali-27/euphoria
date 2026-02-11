@@ -1,84 +1,63 @@
-/* ==============================
-   CLAIM SECTION
-============================== */
-.claim-style-section {
-  padding: 80px 0;
-}
+/* ===============================
+   JOURNEY SECTION
+================================ */
 
-.claim-title {
-  font-size: 32px;
-
-  letter-spacing: 2px;
-}
-
-/* Marquee base */
-.marquee {
-  overflow: hidden;
-  width: 100%;
+.journey-section {
   position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  background-image: url("../Assets/Images/journey-img.png"); /* LEFT IMAGE */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  padding: 40px 0;
 }
 
-.marquee-track {
-  display: flex;
-  gap: 40px;
-  width: max-content;
-  animation: marquee-right 45s linear infinite;
-  will-change: transform;
+.journey-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Direction control */
-.marquee-left .marquee-track {
-  animation: marquee-left 45s linear infinite;
+.journey-title {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 38px;
 }
 
-@keyframes marquee-right {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.journey-item h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
-@keyframes marquee-left {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.product-card {
-  max-width: 220px;
-
-  cursor: pointer;
-}
-
-.product-card img {
-  width: 100%;
-  transition: transform 0.4s ease;
-}
-
-.product-card:hover img {
-  transform: scale(1.05);
-}
-
-.product-card h3 {
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-}
-
-.product-card .price {
-  background: #d9d9d9;
+.journey-item p {
   font-size: 13px;
+  color: #333;
 }
 
-/* ==============================
-   CAMPAIGN FOOTER BASE
-============================== */
+.timeline1 {
+  margin-left: 262px;
+}
+.timeline2 {
+  margin-left: 300px;
+}
+.timeline3 {
+  margin-left: 395px;
+}
+.timeline4 {
+  margin-left: 425px;
+}
+.timeline5 {
+  margin-left: 519px;
+}
+.timeline6 {
+  margin-left: 665px;
+}
 
+/* ===============================
+   FOOTER SECTION
+================================ */
 .campaign-split-footer {
   background-color: #000;
   background-image: url("../Assets/Images/footer-background.png");
@@ -194,11 +173,46 @@
   position: absolute;
   width: 100%;
 }
-/* ==============================
+
+/* ===============================
    RESPONSIVE
-============================== */
+================================ */
+
+@media (max-width: 1200px) {
+  /* OUR JOURNEY SECTION */
+  .journey-content {
+    margin-right: 20px;
+  }
+}
 
 @media (max-width: 992px) {
+  /* OUR JOURNEY SECTION */
+  .journey-section {
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 80px 24px;
+  }
+
+  .journey-item p {
+    color: #222;
+  }
+
+  .journey-item h4 {
+    color: #000;
+  }
+
+  .journey-content {
+    margin: 0 auto;
+  }
+
+  .journey-item {
+    margin-left: 0px;
+  }
+
+  .journey-title {
+    margin-bottom: 48px;
+  }
+
   /* FOOTER SECTION */
   .campaign-footer-newsletter {
     margin-bottom: 30px;

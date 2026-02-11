@@ -370,8 +370,7 @@
   /* height: 263px; */
 }
 
-.look-left-img,
-.lool-right-img {
+.look-left-img, .look-right-img{
   height: 263px;
 }
 
@@ -385,7 +384,7 @@
 }
 
 .look-info {
-  transform: translateY(-10px);
+  transform: translateY(-10px); 
   background: white;
 }
 
@@ -682,6 +681,7 @@
 
     left: 0%;
     width: 100%;
+    transform: translateX(0%);
     margin-bottom: 20px;
     text-align: center;
   }

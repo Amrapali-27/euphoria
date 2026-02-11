@@ -114,7 +114,6 @@
       </div>
     </section> -->
 
-
     <!-- Banner Section -->
 
     <section class="banner-section">
@@ -125,19 +124,21 @@
         <div class="banner-content">
           <div class="banner-left-content">
             <div>Our Initiative</div>
-            <p>Our latest collection represents a bold initiative 
-              to blend sustainability with cutting-edge fashion. 
-              By incorporating eco-friendly materials and innovative 
-              design techniques, we are taking a forward-thinking approach 
-              to redefine the future of style.
+            <p>
+              Our latest collection represents a bold initiative to blend
+              sustainability with cutting-edge fashion. By incorporating
+              eco-friendly materials and innovative design techniques, we are
+              taking a forward-thinking approach to redefine the future of
+              style.
             </p>
           </div>
           <div class="banner-right-content">
             <div>SPRING/SUMMER 2025</div>
-            <p>Our Spring/Summer collection is a celebration of simplicity 
-              and effortless elegance. Inspired by the beauty of nature, 
-              this collection features breezy silhouettes, floral 
-              prints, and lightweight fabrics that are perfect for the warm weather.
+            <p>
+              Our Spring/Summer collection is a celebration of simplicity and
+              effortless elegance. Inspired by the beauty of nature, this
+              collection features breezy silhouettes, floral prints, and
+              lightweight fabrics that are perfect for the warm weather.
             </p>
           </div>
         </div>
@@ -169,23 +170,21 @@
 
             <div class="initiative-model">
               <img
-              src="./Assets/Images/initiative-model.png"
-              class="h-100 w-100 object-fit-cover tall-image mx-auto d-block"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            />
-            <div class="initiative-dance">
-              <img
-              src="./Assets/Images/initiative-dance.png"
-              class="h-100 w-100 object-fit-cover rounded-circle"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-duration="500"
-            />
+                src="./Assets/Images/initiative-model.png"
+                class="h-100 w-100 object-fit-cover tall-image mx-auto d-block"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+              <div class="initiative-dance">
+                <img
+                  src="./Assets/Images/initiative-dance.png"
+                  class="h-100 w-100 object-fit-cover rounded-circle"
+                  data-aos="fade-left"
+                  data-aos-offset="200"
+                  data-aos-duration="500"
+                />
+              </div>
             </div>
-            </div>
-
-            
           </div>
 
           <!-- Circle -->
@@ -432,7 +431,7 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                 <div class="look-left-img">
+                  <div class="look-left-img">
                     <img
                       src="./Assets/Images/slide21.jpg"
                       alt="Look preview"
@@ -482,6 +481,7 @@
                       class="h-100 w-100 object-fit-cover mb-2"
                     />
                   </div>
+                </div>
               </article>
             </div>
 
@@ -540,6 +540,7 @@
                       class="h-100 w-100 object-fit-cover mb-2"
                     />
                   </div>
+                </div>
               </article>
             </div>
 
@@ -548,7 +549,7 @@
               <article class="look-slide">
                 <!-- LEFT -->
                 <div class="look-left d-flex flex-column">
-                 <div class="look-left-img">
+                  <div class="look-left-img">
                     <img
                       src="./Assets/Images/slide41.jpg"
                       alt="Look preview"
@@ -598,6 +599,7 @@
                       class="h-100 w-100 object-fit-cover mb-2"
                     />
                   </div>
+                </div>
               </article>
             </div>
           </div>
@@ -738,8 +740,7 @@
     </section>
 
     <!-- FOOTER SECTION -->
-
-    <footer>
+    <footer class="main-footer">
       <div class="site-footer">
         <div class="container">
           <div
@@ -750,9 +751,32 @@
 
             <div class="footer-form">
               <form class="d-flex flex-column mb-4">
-                <input type="text" class="mb-4" placeholder="NAME" />
-                <input type="email" class="mb-4" placeholder="EMAIL" />
-                <textarea class="mb-4" placeholder="MESSAGE"></textarea>
+                <input
+                  type="text"
+                  class="mb-4"
+                  placeholder="NAME"
+                  id="user-name"
+                  name="name"
+                  aria-label="Name"
+                  required
+                  autocomplete="name"
+                  maxlength="50"
+                />
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  class="mb-4"
+                  placeholder="EMAIL"
+                  name="email"
+                  required
+                  aria-label="Email address for newsletter subscription"
+                />
+                <textarea
+                  id="messageBox"
+                  class="mb-4"
+                  placeholder="MESSAGE"
+                ></textarea>
+
                 <button class="secondary-btn align-self-start">SEND US</button>
               </form>
             </div>
@@ -773,7 +797,7 @@
                 <div class="footer-group mb-5 d-block d-lg-flex text-center">
                   <span class="footer-label">STORES</span>
                   <div class="footer-values">
-                    <a href="#" class="d-block mb-3 mt-3">Austria</a>
+                    <a href="#" class="d-block mb-3">Austria</a>
                     <a href="#" class="d-block mb-3">India</a>
                     <a href="#" class="d-block">Japan</a>
                   </div>
@@ -784,9 +808,7 @@
                 >
                   <span class="footer-label">CONTACT</span>
                   <div class="footer-values">
-                    <a
-                      href="mailto:dhvbfsjbn@jndmv.vovk"
-                      class="d-block mb-3 mt-3"
+                    <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
                       >dhvbfsjbn@jndmv.vovk</a
                     >
                     <a href="mailto:dhvbfsjbn@jndmv.vovk" class="d-block mb-3"
@@ -803,7 +825,7 @@
                 <div class="footer-group d-block d-lg-flex text-center">
                   <span class="footer-label mb-4">FOLLOW US</span>
                   <div class="footer-values">
-                    <a href="#" class="d-block mb-3 mt-3">Instagram</a>
+                    <a href="#" class="d-block mb-3">Instagram</a>
                     <a href="#" class="d-block mb-3">YouTube</a>
                     <a href="#" class="d-block">Twitter</a>
                   </div>

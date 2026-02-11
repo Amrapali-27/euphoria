@@ -85,6 +85,7 @@ ul {
   font-size: 12px;
   font-weight: 500;
   margin-top: 10px;
+  background: white;
 }
 
 .primary-btn span{
@@ -188,7 +189,7 @@ ul {
    FOOTER SECTION
 =========================== */
 
-footer {
+.main-footer {
   padding: 150px 0 0;
 }
 .site-footer {
@@ -205,7 +206,7 @@ footer {
 .footer-title {
   position: absolute;
   top: 59px;
-  left: 31%;
+  left: 27%;
   transform: translateX(-50%);
   font-size: 20px;
   letter-spacing: 1px;
@@ -365,6 +366,11 @@ footer {
 
   .footer-bottom {
     margin-top: 60px;
+  }
+
+   .footer-label{
+    display: block;
+    margin-bottom: 10px;
   }
 }
 

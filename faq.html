@@ -20,7 +20,7 @@
     />
     <!--custom css-->
     <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/claimstyle.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
     <title>AURA</title>
   </head>
   <body>
@@ -87,199 +87,159 @@
       </nav>
     </header>
 
-    <!-- CLAIM SECTION -->
-    <section class="claim-style-section">
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="claim-title fw-semibold">CLAIM YOUR STYLE</h2>
-        </div>
-
-        <!-- TOP ROW (Right → Left) -->
-        <div class="marquee marquee-right">
-          <div class="marquee-track">
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim1.png"
-                alt="Floral Top"
-                class="img-fluid mb-2"
-              />
-              <h3>FLORAL TOP</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim2.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim3.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim9.png"
-                alt="Dress"
-                class="img-fluid mb-2"
-              />
-              <h3>DRESS</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim5.png"
-                alt="Floral Top"
-                class="img-fluid mb-2"
-              />
-              <h3>FLORAL TOP</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim6.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim7.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim8.png"
-                alt="Dress"
-                class="img-fluid mb-2"
-              />
-              <h3>DRESS</h3>
-              <span class="price">$6000</span>
-            </article>
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim9.png"
-                alt="Dress"
-                class="img-fluid mb-2"
-              />
-              <h3>DRESS</h3>
-              <span class="price">$6000</span>
-            </article>
+        <div class="row align-items-start">
+          <div class="faq-header mb-5">
+            <h2 class="faq-title">FAQ</h2>
+            <p class="faq-subtitle">Frequently Asked Questions</p>
           </div>
-        </div>
 
-        <!-- BOTTOM ROW (Left → Right) -->
-        <div class="marquee marquee-left mt-5">
-          <div class="marquee-track">
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim9.png"
-                alt="Jacket"
-                class="img-fluid mb-2"
-              />
-              <h3>JACKET</h3>
-              <span class="price">$6000</span>
-            </article>
+          <!-- Left : faq-->
+          <div class="col-12 col-lg-6">
+            <div
+              class="accordion faq-accordion"
+              id="faqAccordion"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <!-- Item1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqOne"
+                    aria-expanded="true"
+                  >
+                    1. What is your return and exchange policy?
+                  </button>
+                </h2>
+                <div
+                  id="faqOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We accept returns and exchanges within 30 days of purchase.
+                    Items must be unworn, unwashed, and in original condition
+                    with tags intact.
+                  </div>
+                </div>
+              </div>
 
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim8.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
+              <!-- Item2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqTwo"
+                  >
+                    2. Do you ship internationally?
+                  </button>
+                </h2>
+                <div
+                  id="faqTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, we ship internationally. Shipping charges and delivery
+                    times vary by location.
+                  </div>
+                </div>
+              </div>
 
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim7.png"
-                alt="Dress"
-                class="img-fluid mb-2"
-              />
-              <h3>DRESS</h3>
-              <span class="price">$6000</span>
-            </article>
+              <!-- Item3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqThree"
+                  >
+                    3. Are your products sustainable?
+                  </button>
+                </h2>
+                <div
+                  id="faqThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We are committed to sustainable sourcing and ethical
+                    production.
+                  </div>
+                </div>
+              </div>
 
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim6.png"
-                alt="Jacket"
-                class="img-fluid mb-2"
-              />
-              <h3>JACKET</h3>
-              <span class="price">$6000</span>
-            </article>
+              <!-- Item4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFour"
+                  >
+                    4. Where can I find AURA campaigns and releases?
+                  </button>
+                </h2>
+                <div
+                  id="faqFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Follow us on social media or subscribe to our newsletter.
+                  </div>
+                </div>
+              </div>
 
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim5.png"
-                alt="Jacket"
-                class="img-fluid mb-2"
-              />
-              <h3>JACKET</h3>
-              <span class="price">$6000</span>
-            </article>
+              <!-- Item5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFive"
+                  >
+                    5. How can I collaborate with AURA?
+                  </button>
+                </h2>
+                <div
+                  id="faqFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Reach out to us via email for collaboration opportunities.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorem saepe repellendus ipsam perspiciatis ratione ab
+                    natus aut molestias voluptatum soluta!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim9.png"
-                alt="Black Set"
-                class="img-fluid mb-2"
-              />
-              <h3>BLACK SET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim3.png"
-                alt="Dress"
-                class="img-fluid mb-2"
-              />
-              <h3>DRESS</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim2.png"
-                alt="Jacket"
-                class="img-fluid mb-2"
-              />
-              <h3>JACKET</h3>
-              <span class="price">$6000</span>
-            </article>
-
-            <article class="product-card text-center mx-auto">
-              <img
-                src="./Assets/Images/claim1.png"
-                alt="Jacket"
-                class="img-fluid mb-2"
-              />
-              <h3>JACKET</h3>
-              <span class="price">$6000</span>
-            </article>
+          <!-- Right image -->
+          <div
+            class="faq-model col-12 col-lg-6 mt-5 mt-lg-0 text-center"
+            data-aos="zoom-out-left"
+            data-aos-duration="500"
+          >
+            <img
+              src="./Assets/Images/faq-img.png"
+              alt="AURA model"
+              class="faq-image w-100 h-100"
+            />
           </div>
         </div>
       </div>
@@ -288,7 +248,7 @@
     <!-- FOOTER SECTION -->
     <section class="campaign-split-footer">
       <div class="campaign-split-image">
-        <img src="./Assets/Images/footer-model1.png" alt="Aura fashion model" />
+        <img src="./Assets/Images/faq-footer.png" alt="Aura fashion model" />
       </div>
 
       <!-- Right content -->
