@@ -89,7 +89,7 @@
 
 .banner-section .title1 {
   color: transparent;
-  font-size: clamp(9vw, 150px, 7.813vw);
+  font-size: clamp(5vw, 150px, 7.813vw);
   font-family: var(--roboto-family);
   background: url("../Assets/Images/banner-title.png") no-repeat top right /
     cover rgba(0, 0, 0);
@@ -370,7 +370,8 @@
   /* height: 263px; */
 }
 
-.look-left-img, .look-right-img{
+.look-left-img,
+.look-right-img {
   height: 263px;
 }
 
@@ -384,7 +385,7 @@
 }
 
 .look-info {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
   background: white;
 }
 
@@ -789,8 +790,21 @@
 }
 
 @media screen and (max-width: 576px) {
+  .title1 {
+    font-size: 48px !important;
+  }
   .banner-content {
     top: 100%;
+  }
+  .banner-section::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: url("../Assets/Images/banner-bg.png") no-repeat 45% / cover;
+    right: 0;
+    height: 100%;
   }
   /* DISCOVER SECTION */
   .discover-heading {
