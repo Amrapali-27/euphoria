@@ -122,6 +122,109 @@ ul {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
+/* =========================
+   PAGE LOADER
+========================= */
+
+body.loading {
+  overflow: hidden;
+}
+
+.loading-wrpr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff; /* change to black if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+/* Hide state */
+.loading-wrpr.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* From Uiverse.io by Markoslc */
+.item1,
+.item2,
+.item3 {
+  position: absolute;
+  background-color: transparent;
+  left: calc(50% - (var(--size) / 2));
+  top: calc(50% - (var(--size) / 2));
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+}
+
+.loader .item1 {
+  --size: 90px;
+  animation: size1_1 2.5s infinite alternate;
+  z-index: 1;
+}
+
+.loader .item2 {
+  --size: 60px;
+  animation: size1_2 2.5s infinite alternate;
+  z-index: 2;
+}
+
+.loader .item3 {
+  --size: 30px;
+  animation: size1_3 2.5s infinite alternate;
+  z-index: 3;
+}
+
+@keyframes size1_1 {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      8px 8px 14px #c5c5c5,
+      -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_2 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      8px 8px 14px #c5c5c5,
+      -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_3 {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      8px 8px 14px #c5c5c5,
+      -8px -8px 14px #ffffff;
+  }
+}
+
 /* ===========================
    NAVBAR SECTION
 =========================== */
@@ -396,8 +499,8 @@ button,
 ================================ */
 
 @media screen and (max-width: 992px) {
-/* NAVBAR SECTION */
-.navbar-collapse {
+  /* NAVBAR SECTION */
+  .navbar-collapse {
     position: relative;
     background-image: url("../Assets/Images/dropdown-bg.jpg");
     background-size: cover;
@@ -451,7 +554,6 @@ button,
     background-size: 13% 1px;
     transform: translateY(-2px);
   }
-
 
   /* FOOTER SECTION */
   .footer-models img {
@@ -519,4 +621,4 @@ button,
 }
 
 @media (max-width: 991px) {
-  }
+}

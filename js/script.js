@@ -10,6 +10,7 @@ AOS.init({
   });
 
 
+  
   // LOOKS SECTION SWIPER
 
   new Swiper('.looks-swiper', {
@@ -176,3 +177,21 @@ document.querySelectorAll('.marquee').forEach(marquee => {
     }, 400);
   });
 });
+
+
+
+//  PAGE LOADER
+
+const loader = document.getElementById("pageLoader");
+
+// Prevent scrolling while loader is visible
+document.body.classList.add("loading");
+
+window.addEventListener("load", function () {
+  // Wait 4 seconds AFTER page is fully loaded
+  setTimeout(() => {
+    loader.classList.add("hidden");
+    document.body.classList.remove("loading");
+  }, 4000); // 4000ms = 4 seconds
+});
+
