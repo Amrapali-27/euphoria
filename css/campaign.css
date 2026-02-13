@@ -2,7 +2,8 @@
    CAMPAIGN SECTION
 =========================== */
 .campaigns-section {
-  padding: 80px 0;
+  padding: 100px 0;
+  
 }
 
 .campaigns-title {
@@ -13,6 +14,7 @@
 }
 
 .campaigns-wrapper {
+   position: relative;
   min-height: 700px;
 }
 
@@ -50,6 +52,8 @@
   pointer-events: none;
 }
 
+
+
 .btn-dark .secondary-btn {
   background: #242322;
   font-size: 14px;
@@ -63,8 +67,8 @@
   padding: 100px 0;
 }
 
-.initiative-left h3,
-.initiative-right h3 {
+.initiative-left .title4,
+.initiative-right .title4 {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;

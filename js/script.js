@@ -1,14 +1,15 @@
 
+// Luxy Initializing
+luxy.init({
+  wrapper: "#luxy",
+  targets: ".luxy-el",
+  wrapperSpeed: 0.08,
+});
+
 AOS.init({
-    once: true,
-    offset: 150,
-    easing: 'ease-out-cubic'
-  });
-
-  window.addEventListener('load', () => {
-    AOS.refresh();
-  });
-
+  duration: 1000,
+  once: true
+});
 
   
   // LOOKS SECTION SWIPER
@@ -188,10 +189,74 @@ const loader = document.getElementById("pageLoader");
 document.body.classList.add("loading");
 
 window.addEventListener("load", function () {
-  // Wait 4 seconds AFTER page is fully loaded
   setTimeout(() => {
     loader.classList.add("hidden");
     document.body.classList.remove("loading");
-  }, 4000); // 4000ms = 4 seconds
+
+    //Refresh AOS after loader disappears
+    AOS.refreshHard();
+
+  }, 4000);
 });
+
+
+// TITLE1 ZOOM
+document.addEventListener("DOMContentLoaded", function () {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to("#heroTitle", {
+    scale: 1.5,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".banner-section",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Fix for GSAP + AOS conflict
+  ScrollTrigger.addEventListener("refresh", () => AOS.refresh());
+  ScrollTrigger.refresh();
+
+});
+
+
+ const cursor = document.querySelector(".cursor");
+      const cursorBorder = document.querySelector(".cursor-border");
+      let pageX = 0;
+      let pageY = 0;
+      let cursorX = 0;
+      let cursorY = 0;
+      let newX = 0;
+      let newY = 0;
+
+      window.addEventListener("mousemove", (e) => {
+        pageX = e.clientX;
+        pageY = e.clientY;
+      });
+
+      function cursorMove() {
+        cursorX += (pageX - cursorX) / 18;
+        cursorY += (pageY - cursorY) / 18;
+        newX += (pageX - newX) / 6;
+        newY += (pageY - newY) / 6;
+        cursorBorder.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
+        cursor.style.transform = `translate(${newX}px, ${newY}px) translate(-50%, -50%)`;
+        requestAnimationFrame(cursorMove);
+      }
+
+      cursorMove();
+
+
+
+
+
+
 

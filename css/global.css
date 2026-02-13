@@ -15,6 +15,7 @@
 }
 body {
   font-family: var(--inter-family);
+  cursor: none;
 }
 
 html,
@@ -43,13 +44,51 @@ ul {
 .container {
   max-width: 1164px;
 }
-/* header{
-  position: absolute;
+
+/* =========================
+  HEADER FIX
+========================= */
+header {
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-} */
+  width: 100%;
+  z-index: 100;
+  background: white;
+}
+
+
+/* =========================
+   CURSOR
+========================= */
+.cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        z-index: 110;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      }
+
+      .cursor-border {
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 1px solid white;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        z-index: 110;
+      }
+
+
 
 .nav-link {
   font-size: 12px;
@@ -501,7 +540,11 @@ button,
 @media screen and (max-width: 992px) {
   /* NAVBAR SECTION */
   .navbar-collapse {
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 56px;
     background-image: url("../Assets/Images/dropdown-bg.jpg");
     background-size: cover;
     background-position: center;

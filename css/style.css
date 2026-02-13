@@ -91,11 +91,16 @@
   color: transparent;
   font-size: clamp(5vw, 150px, 7.813vw);
   font-family: var(--roboto-family);
-  background: url("../Assets/Images/banner-title.png") no-repeat top right /
-    cover rgba(0, 0, 0);
+  /* background: url("../Assets/Images/banner-title.png") no-repeat top right /
+    cover rgba(0, 0, 0); */
+    background-image:
+    linear-gradient(90deg, #000 0%, #000 19%, rgba(0, 0, 0, 0.1) 47%, #000 94%),
+    url("../Assets/Images/banner-img.png");
+    background-position: center 57%;
   font-weight: 900;
   background-clip: text;
   --webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
@@ -137,6 +142,16 @@
   font-size: 13px;
 }
 
+
+
+.title1 {
+  position: relative;
+  z-index: 10;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+
 /* ===========================
    INITIATIVE SECTION
 =========================== */
@@ -145,8 +160,8 @@
   padding: 0 0 100px 0;
 }
 
-.initiative-left h2,
-.initiative-right h2 {
+.initiative-left .title4,
+.initiative-right .title4 {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -384,7 +399,7 @@
   background: white;
 }
 
-.look-info h3 {
+.look-info .title2 {
   font-size: 32px;
 }
 
@@ -479,7 +494,7 @@
   pointer-events: none;
 }
 
-.standout-caption h4 {
+.standout-caption .title4 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -671,6 +686,8 @@
     top: 85%;
   }
 
+  
+
   /* INITIATIVE SECTION */
   .initiative-section {
   padding: 180px 0 0;
@@ -731,7 +748,7 @@
     width: 400px;
   }
 
-  .look-info h3 {
+  .look-info .title2{
     font-size: 18px;
     margin-bottom: 8px;
   }

@@ -24,6 +24,11 @@
     <title>AURA</title>
   </head>
   <body>
+
+    <!-- CURSOR -->
+    <div class="cursor-border"></div>
+    <div class="cursor"></div>
+
     <!-- HEADER -->
     <header>
       <nav
@@ -104,12 +109,13 @@
       </nav>
     </header>
 
-    <!-- ABOUT US BANNER -->
-    <section class="about-intro py-5">
+    <div id="luxy">
+      <!-- ABOUT US BANNER -->
+    <section class="about-intro">
       <div class="container">
-        <header class="text-center mb-5">
+        <div class="text-center mb-5">
           <h1 class="about-title" data-aos="fade-up">ABOUT US</h1>
-        </header>
+        </div>
 
         <div class="row align-items-start position-relative">
           <!-- Left image -->
@@ -221,9 +227,9 @@
     <section class="vision-section text-light">
       <div class="bg-color">
         <div class="container">
-          <header class="text-center mb-5">
+          <div class="text-center mb-5">
             <h2 class="vision-title" data-aos="fade-up">OUR VISION</h2>
-          </header>
+          </div>
 
           <div class="row align-items-start">
             <!-- Left content -->
@@ -432,6 +438,7 @@
         </div>
       </div>
     </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -446,6 +453,10 @@
 
     <!--AOS js-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Luxy Js -->
+    <script src="./js/luxy.js"></script>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

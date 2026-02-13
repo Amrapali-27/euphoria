@@ -6,6 +6,10 @@ body {
    ABOUT US BANNER
 ================================ */
 
+.about-intro{
+  padding: 100px 0;
+}
+
 .about-title {
   font-size: 32px;
   font-weight: 600;
