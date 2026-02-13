@@ -153,6 +153,15 @@
     gap: 24px;
   }
   
+  .list-unstyled1{
+    order: 1;
+  }
+  .look-center{
+    order: 3;
+  }
+  .list-unstyled{
+    order: 2;
+  }
 }
 
 @media screen and (max-width: 576px) {
