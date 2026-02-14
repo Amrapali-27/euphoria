@@ -56,39 +56,36 @@ header {
   background: white;
 }
 
-
 /* =========================
    CURSOR
 ========================= */
 .cursor {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: white;
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
-        mix-blend-mode: difference;
-        z-index: 110;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-      }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 110;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
 
-      .cursor-border {
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        border: 1px solid white;
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        mix-blend-mode: difference;
-        z-index: 110;
-      }
-
-
+.cursor-border {
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 110;
+}
 
 .nav-link {
   font-size: 12px;
@@ -642,6 +639,16 @@ button,
     margin-right: 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .cursor{
+    display: none;
+  }
+  .cursor-border{
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 576px) {
   /* FOOTER SECTION */
