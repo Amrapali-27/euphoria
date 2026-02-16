@@ -6,6 +6,13 @@ luxy.init({
   wrapperSpeed: 0.08,
 });
 
+
+
+
+
+
+
+
 AOS.init({
   duration: 1000,
   once: true
@@ -227,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
+// CURSOR
  const cursor = document.querySelector(".cursor");
       const cursorBorder = document.querySelector(".cursor-border");
       let pageX = 0;
